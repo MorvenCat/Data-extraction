@@ -10,7 +10,7 @@ print("| \  / | ___  _ ____   _____ _ __ | |     __ _| |_ ")
 print("| |\/| |/ _ \| '__\ \ / / _ \ '_ \| |    / _` | __|")
 print("| |  | | (_) | |   \ V /  __/ | | | |___| (_| | |_ ")
 print("|_|  |_|\___/|_|    \_/ \___|_| |_|\_____\__,_|\__|")
-print("Link:")
+print("Link:https://github.com/MorvenCat/Data-extraction")
 parser = argparse.ArgumentParser(usage='%(prog)s -t 数据文件 [-o 输出文件] -p "前缀" -s "后缀"',
                                  description="这是一个用于提取数据的脚本，可根据前缀与后缀提txt、doc文档中数据。")
 parser.add_argument('-t', '--target_file', required=True, help='需要提取数据的文件')
