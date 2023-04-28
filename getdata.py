@@ -40,7 +40,7 @@ elif os.path.splitext(args.target_file)[1] == '.xlsx':
     rows = ws.values
     text = '\n'.join([''.join(map(str, row)) for row in rows])
 
-pattern = re.compile(args.prefix + "(.*?)" + args.suffix)
+pattern = re.compile(re.escape(args.prefix) + "(.*?)" + re.escape(args.suffix))
 
 matches = pattern.findall(text)
 
