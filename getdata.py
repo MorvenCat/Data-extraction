@@ -22,7 +22,7 @@ def main():
     args = parser.parse_args()
 
     if not os.path.exists(args.target_file):
-        print(f"目标文件 {args.target_file} 不存在，请检查路径是否正确。")
+        print(f"目标文件 {args.target_file} 不存在捏~(￣▽￣)~*，再检查一下吧。")
         exit()
 
     if not os.path.splitext(args.target_file)[1] in ['.txt', '.doc', '.docx', '.xlsx']:
